@@ -1,0 +1,133 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 980px;
+  margin: 0 auto;
+  background-color: white;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+}
+.header {
+  background-color: black;
+  height: 50px;
+  font-size: 1.5rem;
+}
+.logo {
+  width: 980px;
+  height: 50px;
+  background-color: black;
+}
+.sonic {
+  width: 70px;
+  height: 50px;
+  float: left;
+  padding-left: 40px;
+  margin: 0;
+}
+.soniclogo {
+  width: 200px;
+  height: 50px;
+  float: right;
+  padding-right: 670px;
+  margin: 0;
+}
+.content{
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  font-size: 1.5rem;
+  background-color: white;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0px;
+}
+a:hover {
+  color: white;
+  background-color: black;
+  opacity: 0.6;
+}
+.chackdetails {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #4d7ff8;
+  color: white;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.editsonic {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #efbd00;
+  color: white;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.deletesonic {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #f20000;
+  color: white;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.postsonic {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #005c00;
+  color: white;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.soniclist{
+  text-shadow: 5px 6px 6px blue;
+  font-variant: small-caps;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 40px;
+}
+.indexcontent{
+  font-size: 25px;
+}
+.sonicbd {
+  width: 850px;
+  height: 350px;
+  float: center;
+  padding: 50px;
+  margin: 0;
+}
+.footer {
+  background-color: black;
+  height: 100px;
+  width: 980px;
+  display: table;
+  bottom: 0;
+  border-radius: 10px;
+}
+.footer p {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+}

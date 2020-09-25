@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitclone</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class="container>"
+    <header>
+      <div class="logo"><p>
+        <img src="/assets/sonic-logo.png" class="sonic">
+        </p>
+      <p>
+        <img src="/assets/soniclogo.png" class="soniclogo">
+      </p>
+    </div>
+      </header>
+      <div class="content">
+    <%= yield %>
+    </div>
+    <img src="/assets/sonicbd.jpeg" class="sonicbd">
+    <footer class="footer">
+      <p>Operating Company Sonic Co., Ltd.</p>
+      <p>© 2020-2021 Copyright Sonic Corp.</p>
+      </footer>
+      </div>
+  </body>
+</html>

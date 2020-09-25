@@ -1,0 +1,19 @@
+
+<h1 class="soniclist">Sonic List</h1>
+<p><%= notice %></p>
+<table>
+  <tr>
+    <th class="indexcontent">Content</th>
+  </tr>
+<% @sonics.each do |sonic| %>
+  <tr>
+    <th><%= sonic.content %></th>
+    <td><button type="button" class="chackdetails"><%= link_to 'Check the details', sonic_path(sonic.id) %></td>
+    <td><button type="button" class="editsonic"><%= link_to "Edit sonic", edit_sonic_path(sonic.id), data: { confirm: 'Are you really to edit the sonic？' } %></td>
+    <td><button type="button" class="deletesonic"><%= link_to 'Delete sonic', sonic_path(sonic.id), method: :delete ,data: { confirm: 'Are you really to delete the sonic？' } %></td>
+  </tr>
+<% end %>
+</table>
+<br>
+
+<button type="button" class="postsonic"><%= link_to 'Post a new sonic', new_sonic_path %>

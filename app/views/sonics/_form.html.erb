@@ -1,0 +1,23 @@
+<%= form_with(model: @sonic, local: true ,url: choose_new_or_edit ) do |form| %>
+  <% if @sonic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @sonic.errors.count %>There are errors.</h2>
+      <ul>
+      <% @sonic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="sonic_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <br>
+
+  <%= form.submit "Create sonic" %>
+<% end %>
+<br>
+
+<button type="button" class="chackdetails"> <%= link_to "Return to the sonic list screen", sonics_path %>
