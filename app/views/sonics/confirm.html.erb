@@ -1,7 +1,10 @@
 <h2>Send with the following sonics.</h2>
+
 <%= form_with(model: @sonic, local: true, url: sonics_path) do |form| %>
   <%= form.hidden_field :content %>
+
   <p class="indexcontent">Content:<%= @sonic.content %></p>
+
   <%= form.submit  "Sign up" %>
   <button type="button" class="chackdetails"><%= link_to 'Back', new_sonic_path %>
 <% end %>
