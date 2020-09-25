@@ -27,15 +27,12 @@ class SonicsController < ApplicationController
   end
 
   def show
-    #@sonic = Sonic.find(params[:id])
   end
 
   def edit
-    #@sonic = Sonic.find(params[:id])
   end
 
   def update
-    #@sonic = Sonic.find(params[:id])
     if @sonic.update(sonic_params)
       redirect_to sonics_path, notice: "Edited sonic！"
     else
