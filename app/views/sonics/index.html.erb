@@ -5,7 +5,9 @@
   <tr>
     <th class="indexcontent">Content</th>
   </tr>
+
 <% @sonics.each do |sonic| %>
+
   <tr>
     <th><%= sonic.content %></th>
     <td><button type="button" class="chackdetails"><%= link_to 'Check the details', sonic_path(sonic.id) %></td>
