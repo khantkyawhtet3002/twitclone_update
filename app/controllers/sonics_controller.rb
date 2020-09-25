@@ -14,7 +14,7 @@ class SonicsController < ApplicationController
   end
 
   def create
-    @sonic = Sonic.create(sonic_params)
+    @sonic = Sonic.new(sonic_params)
     if params[:back]
       render :new
     else
